@@ -1,13 +1,13 @@
 
-http://username.github.io/archive.html
-http://username.github.io/categories.html
-http://username.github.io/sitemap.txt
-http://username.github.io/atom.xml
-http://username.github.io/index.html
-http://username.github.io/tags.html
-http://username.github.io/pages.html
-http://username.github.io/pages/about/index.html
-http://username.github.io/rss.xml
+http://dbkaiser.github.io/archive.html
+http://dbkaiser.github.io/categories.html
+http://dbkaiser.github.io/sitemap.txt
+http://dbkaiser.github.io/atom.xml
+http://dbkaiser.github.io/index.html
+http://dbkaiser.github.io/tags.html
+http://dbkaiser.github.io/pages.html
+http://dbkaiser.github.io/pages/about/index.html
+http://dbkaiser.github.io/rss.xml
 
-http://username.github.io/2013/09/10/hello-world
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://dbkaiser.github.io/2013/09/10/hello-world
+http://dbkaiser.github.io/lessons/2011/12/29/jekyll-introduction
