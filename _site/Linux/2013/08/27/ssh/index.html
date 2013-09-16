@@ -1,0 +1,155 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>利用ssh父链接免密码登录其他机器 &larr; </title>
+   <meta name="author" content="Dong Bo" />
+
+   <link rel="start" href="/" />
+
+	
+	
+	
+  	<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/dbkaiser" title="RSS feed" />
+	
+	
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body id="">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="/" title="KaiTu">KaiTu</a>
+    	<span class="byline">&larr; <a href="/">Dong Bo</a></span>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="/">Home</a></li>
+      <li><a  href="/archive.html">Archive</a></li>
+      <li><a  href="/pages.html">Pages</a></li>
+      <li><a  href="/categories.html">Categories</a></li>
+      <li><a  href="/tags.html">Tags</a></li>
+    </ul>
+  </div>
+
+  
+<div id="page">
+	
+  <h1 class="emphnext">利用ssh父链接免密码登录其他机器</h1>
+  <ul class="tag_box inline">
+  
+  
+
+
+  
+     
+    	<li><a href="/tags.html#Linux-ref">Linux <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#SSH-ref">SSH <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Screen-ref">Screen <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#password-ref">password <span>1</span></a></li>
+    
+  
+
+
+
+  </ul>
+
+  <h1 id='ssh_master_control'>SSH Master Control</h1>
+
+<p>ssh其实可以保存利用父链接，将多个会话共享同一个ssh链接，这样再次登录同一ssh账户后可以不需要再次密码认证。在windows中的securecrt具有此种功能。即克隆会话。在linux下面则可以更直接的利用openssh的配置进行处理。</p>
+
+<p><a href='http://www.cyberciti.biz/faq/linux-unix-reuse-openssh-connection/'>这篇文章</a>很好的诠释了openssh共享父链接的方法和原理。或者叫做复用链接（ControlMaster）的方法。</p>
+
+<h1 id='screen'>Screen</h1>
+
+<p>另外学习了一下screen的用法，又发现了linux下面的一个神器。<a href='http://wiki.ubuntu.org.cn/index.php?title%3DGNUScreen&amp;variant%3Dzh-hans'>这篇文章</a>完美的诠释了screen的入门命令和超级功能。 这里粘贴一点：</p>
+
+<p>一言以蔽之，screen是个终端的多路复用器。借助screen，你可以在单个终端内运行任意数量的基于终端的应用程序，如交互的命令shell，基于curses的应用程序，文本编辑器等等。做到这点的渴望正是大多数人迷上screen的原因。过去我登录到系统后，常常得打开六七个终端模拟器：一个用来读邮件，一个用来编辑代码，一个来编译代码，一个用来阅读新闻，一个用作登录web主机的shell，等等。现如今，我只要启动一个终端模拟器，然后在其中运行screen。Ok，一切搞定。</p>
+
+<p>screen另一个很酷的主要特性是它能使运行着的程序脱离终端模拟器。也就是说即使你不小心关闭终端模拟器，screen也能让程序继续运行；甚至在你注销之后，它也能让程序在你下次登录后从上次中断处继续执行。也就意味着，所谓的“会话”——你在期间运行大量终端程序——是个自由流动的实体，你可以把它绑定到任意处的任意终端上，甚至根本不绑定，只要你愿意。</p>
+
+<p>注意，在拷贝模式下，需要用空格进行标记开始和结束。拷贝模式下的命令和vi命令很多相一致，详细可以参考<a href='http://my.oschina.net/u/1012289/blog/119864'>这篇文章</a> 。</p>
+
+  <address class="signature">
+    <a class="author" href="/">Dong Bo</a> 
+    <span class="date">27 August 2013</span>
+    <span class="location"></span>
+  </address>
+  
+  <div class="prev-next">
+  
+    <a href="/Blog/2013/09/10/githubblog" class="next" title="github下面建立blog">Next Post &rarr;</a>
+  
+  
+    <a href="/work/2013/08/27/" class="prev" title="计算机学习的一点感悟">&larr; Earlier Post</a>
+  
+  </div>
+  
+</div><!-- End Page -->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+
+  
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="/info/site.html">Dong Bo</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			<br/>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="http://github.com/mojombo/jekyll/" title="A static, minimalist CMS">Jekyll</a>
+  		</span>
+  	</address>
+  </div>
+  
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript"> 
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+<![endif]-->
+
+  
+</body>
+</html>
+

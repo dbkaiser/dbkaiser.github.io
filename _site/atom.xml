@@ -4,7 +4,7 @@
  <title>KaiTu</title>
  <link href="http://dbkaiser.github.io/" rel="self"/>
  <link href="http://dbkaiser.github.io"/>
- <updated>2013-09-11T13:37:44+08:00</updated>
+ <updated>2013-09-16T19:21:45+08:00</updated>
  <id>http://dbkaiser.github.io</id>
  <author>
    <name>Dong Bo</name>
@@ -13,11 +13,238 @@
 
  
  <entry>
-   <title>hello world</title>
-   <link href="http://dbkaiser.github.io/2013/09/10/hello-world"/>
+   <title>Emacs下irc聊天以及浏览网页、收发邮件</title>
+   <link href="http://dbkaiser.github.io/Emacs/2013/09/16/emacsirc"/>
+   <updated>2013-09-16T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/Emacs/2013/09/16/emacsirc</id>
+   <content type="html">&lt;h1 id='ircerc'&gt;IRC介绍以及ERC安装&lt;/h1&gt;
+
+&lt;p&gt;IRC: Internet Realtime Client???&lt;/p&gt;
+
+&lt;h1 id='id10'&gt;常用命令&lt;/h1&gt;
+
+&lt;h1 id='id11'&gt;常用网站&lt;/h1&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>emacs debug c\c++工程</title>
+   <link href="http://dbkaiser.github.io/Linux/2013/09/13/new-post"/>
+   <updated>2013-09-13T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/Linux/2013/09/13/new-post</id>
+   <content type="html">&lt;h2 id='emacs_debug_cc'&gt;emacs debug c\c++工程&lt;/h2&gt;
+
+&lt;h1 id='emacs_debug_'&gt;emacs debug 记录&lt;/h1&gt;
+
+&lt;p&gt;emacs可以很方便和gdb结合。进行debug和编译。&lt;/p&gt;
+
+&lt;p&gt;在&lt;code&gt;ede mode&lt;/code&gt;下可以通过&lt;code&gt;M-x ede-new RET&lt;/code&gt;来自动创建make文件和工程信息。可以通过info文档中ede章节来学习。&lt;/p&gt;
+
+&lt;p&gt;通过&lt;code&gt;M-x compile&lt;/code&gt;进行编译。&lt;code&gt;M-x debug&lt;/code&gt;进行调试。&lt;/p&gt;
+
+&lt;p&gt;进入debug后相当与一个emacs整合的gdb。gdb命令依然适用。不过可以在另一个窗口直接查看当前运行到的代码以及console输出。亦可以通过光标移动到指定位置设置断点。快捷键为：&lt;code&gt;C-x SPC&lt;/code&gt;。&lt;a href='http://wenku.baidu.com/view/fec27500b52acfc789ebc903.html'&gt;这篇文章&lt;/a&gt;列举了主要有用的快捷键。&lt;/p&gt;
+
+&lt;h1 id='debug_'&gt;debug 命令&lt;/h1&gt;
+
+&lt;h2 id='gdb'&gt;这里再记录几个有效的gdb命令：&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;p 打印&lt;/li&gt;
+
+&lt;li&gt;n 下一步&lt;/li&gt;
+
+&lt;li&gt;s 跳入&lt;/li&gt;
+
+&lt;li&gt;finish 跳出&lt;/li&gt;
+
+&lt;li&gt;r 启动&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='id9'&gt;怎样打印数组呢？&lt;/h2&gt;
+
+&lt;p&gt;如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;p *varible@lenght&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>jekyll 初体验</title>
+   <link href="http://dbkaiser.github.io/Blog/2013/09/13/jekyll-"/>
+   <updated>2013-09-13T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/Blog/2013/09/13/jekyll-</id>
+   <content type="html">&lt;h2 id='id8'&gt;小坑&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;jekyll利用率yaml？？的解析作为头部解析，优点是简介明了。但是缺点是解析时需要多多注意。如&lt;code&gt;\&lt;/code&gt;是需要转意字符转意的，也就是要写成&lt;code&gt;\\&lt;/code&gt;。&lt;/li&gt;
+
+&lt;li&gt;其次类别是不支持中文字符的。我不确定是不是因为操作系统的原因。在linux下面写的中文字符做分类是不能被jekyll正确解析的。&lt;/li&gt;
+
+&lt;li&gt;在markdown中，对于list，如果有没有英文字母，则不能正确转意。比如&lt;code&gt;- 这一行没有英文字母将不会转意&lt;/code&gt;这可能是当前jekyll的一个bug&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>github下面建立blog</title>
+   <link href="http://dbkaiser.github.io/Blog/2013/09/10/githubblog"/>
    <updated>2013-09-10T00:00:00+08:00</updated>
-   <id>http://dbkaiser.github.io/2013/09/10/hello-world</id>
-   <content type="html"></content>
+   <id>http://dbkaiser.github.io/Blog/2013/09/10/githubblog</id>
+   <content type="html">&lt;h2 id='id6'&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;新浪blog非常好。可以通过xrpc方式进行发布blog。用我用chrome的插件scribefire就可以很方便的用markdown来写blog。但是用emacs的org2blog插件确不能很好的兼容。org2blog可以支持wordpress。但是国内几个网站的blog xrpc就不那么支持了。我又尝试了用几大网站的云app建wordpress。&lt;a href='http://developer.baidu.com/bae/'&gt;百度云&lt;/a&gt;需要大量特有的api修改。不能和原生wordpress结合。而官网发布的wordpress不仅版本较老，而且貌似不是很稳定，我的blog在几天之后访问出现了问题。&lt;a href='http://sae.sina.com.cn/'&gt;新浪云&lt;/a&gt;不免费，还得花钱。不符合我的屌丝习惯。。。&lt;a href='http://appengine.google.com/'&gt;gae&lt;/a&gt;对wordpress支持很好，可以无缝安装部署。但是mysql的存储是收费的。相当与要写blog就要收费。也没戏。剩下那些国外的那些blog就是墙的问题了。突然看到别人的blog写了后缀是github。才发现github现在已经支持了个人网站的发布。好欣喜啊。终于可以方便的用emacs写blog了。&lt;/p&gt;
+
+&lt;p&gt;这里的文字都源于&lt;a href='https://help.github.com/articles/creating-pages-with-the-automatic-generator'&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id='id7'&gt;起步&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;建立你自己的页面repo：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以用户为例，你的新repo的名字必须是：&lt;code&gt;username.github.io&lt;/code&gt;，这里面username必须是你的用户名。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;点击repo的setting:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='setting' src='https://github-images.s3.amazonaws.com/help/repo-actions-settings.png' /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;点击Automatic Page Generator:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='apg' src='https://github-images.s3.amazonaws.com/help/pages-automatic-page-generator.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;这样你就可以编辑你在github上第一个页面的内容了。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;编辑你的页面并配置你的主题(Theme):&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='edit' src='https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;发布(Publish)：&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='publish' src='https://github-images.s3.amazonaws.com/blog/2012/page-generator-publish.png' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;点击publish&lt;/p&gt;
+
+&lt;p&gt;好了。 这样你页面可以在10分钟之后通过http://username.github.io来访问，username是你的用户名。这是一个最基本的静态页面网站。你可以通过github的repo来修改，编辑内容。下面我们会学习怎么用&lt;a href='http://jekyllbootstrap.com/'&gt;Jekyll&lt;/a&gt; 来建立自己的blog。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/'&gt;这篇文章&lt;/a&gt;提供了更多丰富的选择。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>利用ssh父链接免密码登录其他机器</title>
+   <link href="http://dbkaiser.github.io/Linux/2013/08/27/ssh"/>
+   <updated>2013-08-27T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/Linux/2013/08/27/ssh</id>
+   <content type="html">&lt;h1 id='ssh_master_control'&gt;SSH Master Control&lt;/h1&gt;
+
+&lt;p&gt;ssh其实可以保存利用父链接，将多个会话共享同一个ssh链接，这样再次登录同一ssh账户后可以不需要再次密码认证。在windows中的securecrt具有此种功能。即克隆会话。在linux下面则可以更直接的利用openssh的配置进行处理。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://www.cyberciti.biz/faq/linux-unix-reuse-openssh-connection/'&gt;这篇文章&lt;/a&gt;很好的诠释了openssh共享父链接的方法和原理。或者叫做复用链接（ControlMaster）的方法。&lt;/p&gt;
+
+&lt;h1 id='screen'&gt;Screen&lt;/h1&gt;
+
+&lt;p&gt;另外学习了一下screen的用法，又发现了linux下面的一个神器。&lt;a href='http://wiki.ubuntu.org.cn/index.php?title%3DGNUScreen&amp;amp;variant%3Dzh-hans'&gt;这篇文章&lt;/a&gt;完美的诠释了screen的入门命令和超级功能。 这里粘贴一点：&lt;/p&gt;
+
+&lt;p&gt;一言以蔽之，screen是个终端的多路复用器。借助screen，你可以在单个终端内运行任意数量的基于终端的应用程序，如交互的命令shell，基于curses的应用程序，文本编辑器等等。做到这点的渴望正是大多数人迷上screen的原因。过去我登录到系统后，常常得打开六七个终端模拟器：一个用来读邮件，一个用来编辑代码，一个来编译代码，一个用来阅读新闻，一个用作登录web主机的shell，等等。现如今，我只要启动一个终端模拟器，然后在其中运行screen。Ok，一切搞定。&lt;/p&gt;
+
+&lt;p&gt;screen另一个很酷的主要特性是它能使运行着的程序脱离终端模拟器。也就是说即使你不小心关闭终端模拟器，screen也能让程序继续运行；甚至在你注销之后，它也能让程序在你下次登录后从上次中断处继续执行。也就意味着，所谓的“会话”——你在期间运行大量终端程序——是个自由流动的实体，你可以把它绑定到任意处的任意终端上，甚至根本不绑定，只要你愿意。&lt;/p&gt;
+
+&lt;p&gt;注意，在拷贝模式下，需要用空格进行标记开始和结束。拷贝模式下的命令和vi命令很多相一致，详细可以参考&lt;a href='http://my.oschina.net/u/1012289/blog/119864'&gt;这篇文章&lt;/a&gt; 。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>计算机学习的一点感悟</title>
+   <link href="http://dbkaiser.github.io/work/2013/08/27/"/>
+   <updated>2013-08-27T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/work/2013/08/</id>
+   <content type="html">&lt;h2 id='id5'&gt;随手写&lt;/h2&gt;
+
+&lt;p&gt;记得大一的时候。做计算机编程的c语言课设。题目是连连看消除的小游戏。用c语言实现。包括gui、算法等等等等。别看游戏很小。发挥的空间确很大。比如游戏可以即用鼠标控制，也用键盘控制，可以用何种方式展现，甚至可以增加ai等等。由于没有类库、没有framework。一切都是最基础的从头开始。我做的和大多数人一样，就是找到制定的展示方法，然后将核心算法实现。优化上应该主要就是让展示更美观，让系统更稳定等等了。更厉害的一位同学则是完成了鼠标和键盘共同控制游戏（我的控制只有鼠标），令我羡慕不已。不过另外一位同学，我们叫他同学t吧。我碰到这位同学t讨论各自的程序的时候，他确在告诉我说他正在研究显示驱动的实现，就是那种很底层的，包含部分汇编的代码。我就很费解，问他：这对你完成这个课设实现有帮助么？他说：凡事都要明白为什么嘛。我就想，与其有这个时间还不如多放写精力在界面设计上，让你的课设更美观更稳定。后来成绩出来了，我得了97。同学t得了98。对这一分的差距，我不以为然，他付出很多辛苦、很多研究。我肯定承认他会做得比我好，但是有必要吗？这位同学现在在美国读数学系的博士。他说他读计算机是选错方向了，在本科中他就辅修了数学系。他基本没怎么准备英语考试，本科发表了好几篇数学论文。直接“保送”过去了。现在想想，这就是那一分差距中包含的内容。&lt;/p&gt;
+
+&lt;p&gt;后来到了工作中，我感觉我凭着动手和小聪明还是沾了不少光。在计算机职业中，动手能力很重要。上手快，学习快，很重要。但是另外一个问题让我日益感觉到了，那一分的重要。李彦宏提了个口号，叫做事要做到极致，开始并不觉得，等和一些资深的员工合作时才发现，他们的“极致”的思想。一些事当然是可以通过临时抱抱佛脚快速完成。但后面别人的各种challenge也会接踵而至。有些事情确实通过google就可以解决了。但是可能下次、下下次还需要google。感觉上一次两次好像很快，但是没有积累，后面的问题和坑才越来越多。其实真的浪费了很多时间和经验。做到极致，就是需要知其然，更知其所以然。极致，就是厚积薄发，未雨绸缪。极致，就是那一分的差距。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ios 的线程编程</title>
+   <link href="http://dbkaiser.github.io/IOS/2013/08/16/ios-"/>
+   <updated>2013-08-16T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/IOS/2013/08/16/ios-</id>
+   <content type="html">&lt;h2 id='iosdelegate'&gt;ios下得delegate机制&lt;/h2&gt;
+
+&lt;p&gt;尝试了几天ios编程，觉得比较有特色的是他的线程编程易用性。其实和安卓中的界面线程特殊性相同，ios也对线程编程做了很多工作。使得ios下面的线程编写非常简单。&lt;/p&gt;
+
+&lt;h1 id='id2'&gt;线程编程&lt;/h1&gt;
+
+&lt;p&gt;ios 相较于安卓的线程编程提供了很易用的api，但却没有关于“主线程”的种种&lt;a href=''&gt;限制&lt;/a&gt;。ios中主线程仍可以进行网络通信，甚至等待。但是我们写程序时候依然应注意，应在子线程中进行网络通信。&lt;/p&gt;
+
+&lt;h2 id='id3'&gt;启动线程&lt;/h2&gt;
+
+&lt;p&gt;有三种启动线程的方式： - 直接调用&lt;/p&gt;
+
+&lt;p&gt;直接调用：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[myObj performSelectorInBackground:@selector(myThreadMainMethod) withObject:nil];&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这种方式直接将selector（被调用的线程线程程序）放入“后台线程”。&lt;/p&gt;
+
+&lt;p&gt;需要注意的是后台线程只有单独线程。两次调用此函数，如果前一个函数没有运行完，后面不会运行。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NSThread调用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='id4'&gt;线程通信&lt;/h2&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Ubuntu 13.04 下的一些软件配置：MPlayer,Anyconnect,VMWare, Oracle Java</title>
+   <link href="http://dbkaiser.github.io/Linux/2013/08/10/ubuntumplayeranyconnectvmware"/>
+   <updated>2013-08-10T00:00:00+08:00</updated>
+   <id>http://dbkaiser.github.io/Linux/2013/08/10/ubuntumplayeranyconnectvmware</id>
+   <content type="html">&lt;h1 id='id1'&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;Ubuntu 13.04下有些软件和之前的版本配置有所不同，其实是更好用了，但是网上的老版本教程会不管用。这里记录一下：&lt;/p&gt;
+
+&lt;h1 id='vmware_toolubuntu_13'&gt;VMWare tool在Ubuntu 13下安装失败的问题&lt;/h1&gt;
+
+&lt;p&gt;vmware player 非常好用，在任何操作系统下都可以简单完成虚拟系统的安装。不过，在Ubuntu13下安装完xp系统后在安装vmware tool时确没有那么顺利。不是自动升级完成的。这里就可以参考&lt;a href='https://communities.vmware.com/thread/447865?start%3D0&amp;amp;tstart%3D0'&gt;这篇文章&lt;/a&gt;。 需要手动下载vmware tool进行安装。&lt;/p&gt;
+
+&lt;h1 id='cisco_anyconnect_ubuntu_1304'&gt;Cisco Anyconnect 在Ubuntu 1304下面的使用&lt;/h1&gt;
+
+&lt;p&gt;很多公司登录vpn都是用的Cisco Anyconnect。非常好用，且各个平台都很齐全。但是在Ubuntu1304下面安装之后确发现无法正常连接。总出出现“cannot connect to gateway”的错误。于是谷歌一下。发现了&lt;a href='https://supportforums.cisco.com/thread/2226093'&gt;这篇文章&lt;/a&gt;。 Ubuntu下面一个开源工具： openconnect就可以适配的完成这个工作。无需另行安装。&lt;/p&gt;
+
+&lt;p&gt;只需运行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install network-manager-openconnect-gnome&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;之后直接在屏幕右上角上面的vpn connection中选择你要链接的公司vpn网址就ok了。很方便的！&lt;/p&gt;
+
+&lt;h1 id='ubuntu_mplayer'&gt;Ubuntu 下面MPlayer的中文字体&lt;/h1&gt;
+
+&lt;p&gt;这个真是折腾了好久，可能是因为网上的同学们使用的版本不一致，按照各种各样的说法都不能展示中文字幕。最后发现是这样的：（我这里说明的是命令行的，MPlayer, gmplayer可以参考，但没有实践）&lt;/p&gt;
+
+&lt;p&gt;我这里使用的是Ubuntu1304版本&lt;/p&gt;
+
+&lt;p&gt;MPlayer 版本：&lt;/p&gt;
+
+&lt;p&gt;如很多教程所说： 需要在~/.mplayer/config中设定参数只要两项：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; subcp=cp936
+ subfont=&amp;quot;AR PL UKai CN&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里很多教程都是说指向ttf或ttc的绝对路径。但是我这样试都是失败的。只有横线留下。这里我用的是font的名称。可以通过&lt;code&gt;gnome-font-viewer&lt;/code&gt;来查看。&lt;/p&gt;
+
+&lt;p&gt;这里最主要的问题就是这个subfont。一直没找对路，一旦subfont对了以后，后面都还是很智能的。subcp是选择语言种类，这里你填utf-8\gbk\cp936都可以，如果是cp936的话，他甚至可以自动识别字母的编码是gbk还是utf-8，不需要用iconv手工转换。教程太多了也麻烦。&lt;/p&gt;
+
+&lt;h1 id='ubuntu_oraclejava'&gt;Ubuntu 下安装oracle官方Java&lt;/h1&gt;
+
+&lt;p&gt;其实可能没必要。因为Java从7开始和openjdk的架构都很相似了。官方支持的openjdk完全可以完成我们需要的Java任务。本来我是要安装web Java。因此搜寻了一下。 可以参考&lt;a href='http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html'&gt;这篇文章&lt;/a&gt;。 很简单，通过ppa的方式添加repo，然后用apt-get安装。&lt;/p&gt;</content>
  </entry>
  
  <entry>

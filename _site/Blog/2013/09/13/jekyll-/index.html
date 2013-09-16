@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Categories &larr; </title>
+   <title>jekyll 初体验 &larr; </title>
    <meta name="author" content="Dong Bo" />
 
    <link rel="start" href="/" />
@@ -44,195 +44,76 @@
   
 <div id="page">
 	
-<h1 class="emphnext">Categories</h1>
-
-
-<ul class="tag_box inline">
+  <h1 class="emphnext">jekyll 初体验</h1>
+  <ul class="tag_box inline">
   
   
 
 
   
      
-    	<li><a href="/categories.html#lessons-ref">
-    		lessons <span>1</span>
-    	</a></li>
+    	<li><a href="/tags.html#github-ref">github <span>2</span></a></li>
      
-    	<li><a href="/categories.html#Linux-ref">
-    		Linux <span>3</span>
-    	</a></li>
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span>2</span></a></li>
      
-    	<li><a href="/categories.html#IOS-ref">
-    		IOS <span>1</span>
-    	</a></li>
+    	<li><a href="/tags.html#blog-ref">blog <span>2</span></a></li>
      
-    	<li><a href="/categories.html#work-ref">
-    		work <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Blog-ref">
-    		Blog <span>2</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Emacs-ref">
-    		Emacs <span>1</span>
-    	</a></li>
+    	<li><a href="/tags.html#Web-ref">Web <span>1</span></a></li>
     
   
 
 
+
+  </ul>
+
+  <h2 id='id8'>小坑</h2>
+
+<ul>
+<li>jekyll利用率yaml？？的解析作为头部解析，优点是简介明了。但是缺点是解析时需要多多注意。如<code>\</code>是需要转意字符转意的，也就是要写成<code>\\</code>。</li>
+
+<li>其次类别是不支持中文字符的。我不确定是不是因为操作系统的原因。在linux下面写的中文字符做分类是不能被jekyll正确解析的。</li>
+
+<li>在markdown中，对于list，如果有没有英文字母，则不能正确转意。比如<code>- 这一行没有英文字母将不会转意</code>这可能是当前jekyll的一个bug</li>
 </ul>
 
-
- 
-  <h2 id="lessons-ref">lessons</h2>
-  <ul>
-      
-    
-
-
+  <address class="signature">
+    <a class="author" href="/">Dong Bo</a> 
+    <span class="date">13 September 2013</span>
+    <span class="location"></span>
+  </address>
   
-    
-      
-      	
-      	<li><a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
-      	
-      
-    
+  <div class="prev-next">
   
-
-
-
-  </ul>
- 
-  <h2 id="Linux-ref">Linux</h2>
-  <ul>
-      
-    
-
-
+    <a href="/Linux/2013/09/13/new-post" class="next" title="emacs debug c\c++工程">Next Post &rarr;</a>
   
-    
-      
-      	
-      	<li><a href="/Linux/2013/09/13/new-post">emacs debug c\c++工程</a></li>
-      	
-      
-    
   
-    
-      
-      	
-      	<li><a href="/Linux/2013/08/27/ssh">利用ssh父链接免密码登录其他机器</a></li>
-      	
-      
-    
+    <a href="/Blog/2013/09/10/githubblog" class="prev" title="github下面建立blog">&larr; Earlier Post</a>
   
-    
-      
-      	
-      	<li><a href="/Linux/2013/08/10/ubuntumplayeranyconnectvmware">Ubuntu 13.04 下的一些软件配置：MPlayer,Anyconnect,VMWare, Oracle Java</a></li>
-      	
-      
-    
+  </div>
   
-
-
-
-  </ul>
- 
-  <h2 id="IOS-ref">IOS</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/IOS/2013/08/16/ios-">ios 的线程编程</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="work-ref">work</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/work/2013/08/27/">计算机学习的一点感悟</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="Blog-ref">Blog</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Blog/2013/09/13/jekyll-">jekyll 初体验</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/Blog/2013/09/10/githubblog">github下面建立blog</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="Emacs-ref">Emacs</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Emacs/2013/09/16/emacsirc">Emacs下irc聊天以及浏览网页、收发邮件</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
-
-
-
-
 </div><!-- End Page -->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
 
 
   
