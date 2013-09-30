@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>ios 的线程编程 &larr; </title>
+   <title>IOS 的线程编程 &larr; </title>
    <meta name="author" content="Dong Bo" />
 
    <link rel="start" href="/" />
@@ -44,7 +44,7 @@
   
 <div id="page">
 	
-  <h1 class="emphnext">ios 的线程编程</h1>
+  <h1 class="emphnext">IOS 的线程编程</h1>
   <ul class="tag_box inline">
   
   
@@ -55,8 +55,6 @@
     	<li><a href="/tags.html#IOS-ref">IOS <span>1</span></a></li>
      
     	<li><a href="/tags.html#Thread-ref">Thread <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#programming-ref">programming <span>1</span></a></li>
     
   
 
@@ -64,13 +62,15 @@
 
   </ul>
 
-  <h2 id='iosdelegate'>ios下得delegate机制</h2>
+  <h2 id='iosdelegate'>IOS下得delegate机制</h2>
 
-<p>尝试了几天ios编程，觉得比较有特色的是他的线程编程易用性。其实和安卓中的界面线程特殊性相同，ios也对线程编程做了很多工作。使得ios下面的线程编写非常简单。</p>
+<p>尝试了几天IOS编程，觉得比较有特色的是他的线程编程易用性。其实和安卓中的界面线程特殊性相同，IOS也对线程编程做了很多工作。使得IOS下面的线程编写非常简单。</p>
 
 <h1 id='id2'>线程编程</h1>
 
-<p>ios 相较于安卓的线程编程提供了很易用的api，但却没有关于“主线程”的种种<a href=''>限制</a>。ios中主线程仍可以进行网络通信，甚至等待。但是我们写程序时候依然应注意，应在子线程中进行网络通信。</p>
+<p>//TODO 增加安卓主线程限制。</p>
+
+<p>IOS 相较于安卓的线程编程提供了很易用的api，但却没有关于“主线程”的种种<a href=''>限制</a>。IOS中主线程仍可以进行网络通信，甚至等待。但是我们写程序时候依然应注意，应在子线程中进行网络通信。</p>
 
 <h2 id='id3'>启动线程</h2>
 
@@ -82,13 +82,21 @@
 
 <p>这种方式直接将selector（被调用的线程线程程序）放入“后台线程”。</p>
 
-<p>需要注意的是后台线程只有单独线程。两次调用此函数，如果前一个函数没有运行完，后面不会运行。</p>
+<p>需要<em>注意</em>的是后台线程只有<em>单独线程</em>。两次调用此函数，如果前一个函数没有运行完，后面不会运行。</p>
+
+<p>在xcode中（亦可能是ios版本的问题），有可能@selector不能被解析导致编译不过去。可以通过：来运行时加载selector。</p>
+
+<pre><code>//TODO dynamic add selector</code></pre>
 
 <ul>
 <li>NSThread调用</li>
 </ul>
 
+<p>这种调用更加灵活，可以配置单独的子线程运行程序。</p>
+
 <h2 id='id4'>线程通信</h2>
+
+<p>IOS编程是严格依照MVC模式进行的。</p>
 
   <address class="signature">
     <a class="author" href="/">Dong Bo</a> 

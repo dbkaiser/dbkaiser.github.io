@@ -9,8 +9,9 @@ http://dbkaiser.github.io/pages.html
 http://dbkaiser.github.io/pages/about/index.html
 http://dbkaiser.github.io/rss.xml
 
+http://dbkaiser.github.io/Emacs/2013/09/23/el-getemacs
 http://dbkaiser.github.io/Emacs/2013/09/16/emacsirc
-http://dbkaiser.github.io/Linux/2013/09/13/new-post
+http://dbkaiser.github.io/Emacs/2013/09/13/new-post
 http://dbkaiser.github.io/Blog/2013/09/13/jekyll-
 http://dbkaiser.github.io/Blog/2013/09/10/githubblog
 http://dbkaiser.github.io/Linux/2013/08/27/ssh
