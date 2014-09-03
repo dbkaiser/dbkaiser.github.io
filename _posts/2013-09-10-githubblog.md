@@ -45,3 +45,23 @@ xrpc就不那么支持了。我又尝试了用几大网站的云app建wordpress�
 来建立自己的blog。
 
 [这篇文章](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/)提供了更多丰富的选择。
+
+## 中文的问题
+
+如遇到此类提示(可能因设置了中文的catagory):
+
+    ...
+	Liquid Exception: invalid byte sequence in UTF-8 in atom.xml
+	/Documents/never.doubting.me/plugins/octopress_filters.rb:75:in `gsub'
+	/Documents/never.doubting.me/plugins/octopress_filters.rb:75:in `cdata_escape'
+	...
+
+最方便的方法是换用kramdown.首先安装kramdown:
+
+`gem install kramdown`
+
+之后修改`_config.yml`文件:
+
+    markdown: kramdown
+
+其目的是将markdown解释器由默认的redcarpet改为kramdown，[这篇文章](http://stackoverflow.com/questions/373002/better-ruby-markdown-interpreter)做了一个比较。
